@@ -6,13 +6,20 @@ image.addEventListener("click", () => {
 
 const userName = document.querySelector("#firstname");
 const buttonUserName = document.querySelector(".changeName");
-const color = document.querySelector(".description.pink-bg");
+const pinkElements = document.querySelectorAll('[class*="pink"]');
 
 buttonUserName.addEventListener("click", () => {
 	const userColor = prompt("Please, select a color :");
 	const name = prompt("Please, enter your name :");
+
 	if (userColor === "#750ff7") {
-		color.style.backgroundColor = "#750ff7";
+		for (const element of pinkElements) {
+			if (element.classList.contains("pink-text")) {
+				element.style.color = userColor;
+			} else {
+				element.style.backgroundColor = userColor;
+			}
+		}
 	}
 
 	if (name) {
