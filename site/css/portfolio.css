@@ -120,6 +120,11 @@ p {
     flex-direction: column;
     align-items: center;
   }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 700px) {
