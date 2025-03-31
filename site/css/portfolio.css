@@ -113,6 +113,16 @@ h5 {
 	font-size: 2rem;
 }
 
+button {
+	appearance: none;
+	background-color: white;
+	border-style: none;
+	padding: 10px;
+	border-radius: 5px;
+	color: var(--lightWildColor);
+	box-shadow: var(--styledShadow);
+}
+
 @media screen and (min-width: 700px) {
 	nav {
 		justify-content: space-between;
