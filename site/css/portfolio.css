@@ -131,4 +131,9 @@ p {
   .desktop {
     display: none;
   }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
